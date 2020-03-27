@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            app:title="Symptomps"
+            app:titleMarginStart="10dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="400dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="150dp"
+                            android:text="What is the purpose of a stay-at-home order?"
+                            android:textColor="#fff"
+                            android:textSize="40dp"
+                            android:gravity="center"
+                            android:background="@color/colorPrimary" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="“If we allowed everyone to go about their business as usual, most everyone would come in contact with the virus,” said Holmes. “Of those, about 80 percent would get pretty sick, and of those, about 20 percent will need to be hospitalized.”"
+                            android:textSize="20dp"
+                            android:paddingLeft="11dp"
+                            android:background="#EBEBEB"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The purpose of a stay-at-home order is to limit how many people are exposed to the virus."
+                            android:textSize="20dp"
+                            android:paddingLeft="11dp"
+                            android:background="#EBEBEB"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What kind of things can I do when there is a stay-at-home order?"
+                            android:textSize="25dp"
+                            android:paddingLeft="11dp"
+                            android:background="@drawable/shadow2"
+                            android:textColor="#FFF"
+                            android:padding="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You can still do essential activities like getting medical care and shopping for food, medicine, and supplies.
+
+In addition, gas stations and mechanics are open, as well as essential services such as banks, the post office, and shipping companies.
+
+Gyms and public pools will also be closed during this time, but going out for a walk or run where you aren’t around other people is fine.
+
+If you work in a business that’s considered essential, you may still go to work."
+                            android:textSize="20dp"
+                            android:paddingLeft="11dp"
+                            android:background="#EBEBEB"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Are there things I should be stocking up on?"
+                            android:textSize="25dp"
+                            android:paddingLeft="11dp"
+                            android:background="@drawable/shadow2"
+                            android:textColor="#fff"
+                            android:padding="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Holmes suggested stocking up on frozen and canned fruits and vegetables, bread, pasta, frozen meals, meats, and fish, and limiting visits to the grocery store for perishables like milk, eggs, and fresh fruits and vegetables.
+
+You can also check into having your food delivered by Peapod, Amazon, or a local grocery store, she said.
+
+However, Labus added, it isn’t necessary to hoard toilet paper, water, or food.
+
+“Stores will continue to remain open and our food supply is intact, so there is no reason to buy several months’ worth of food.
+
+“There is also no reason to expect our water supply to fail, as this isn’t a natural disaster like an earthquake, so you don’t need to stockpile water.”"
+                            android:textSize="20dp"
+                            android:paddingLeft="11dp"
+                            android:background="#EBEBEB"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Do I need to practice social distancing while I am home?"
+                            android:textSize="25dp"
+                            android:paddingLeft="11dp"
+                            android:background="@drawable/shadow2"
+                            android:textColor="#fff"
+                            android:padding="15dp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="“You should not be having gatherings at your house, and you need to keep your distance from people outside your household as much as possible.”
+
+However, within your own home, you can’t really avoid contact with the people who live with you.
+
+You do, however, want to pay special attention to older family members and those with high risk medical conditions to avoid spreading the disease to them if you do become sick."
+                            android:textSize="20dp"
+                            android:paddingLeft="11dp"
+                            android:background="#EBEBEB"
+                            android:textColor="#000"
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        android:background="@drawable/back"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffff"
+        app:itemIconTint="#ce4552"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

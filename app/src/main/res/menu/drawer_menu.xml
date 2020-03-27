@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Menu" />
+    <item android:id="@+id/nav_info"
+        android:icon="@drawable/ic_info"
+        android:title="General information" />
+    <item android:id="@+id/nav_prevention"
+        android:icon="@drawable/ic_prevention"
+        android:title="Prevention" />
+    <item android:id="@+id/nav_symptoms"
+        android:icon="@drawable/ic_symptoms"
+        android:title="Symptoms" />
+    <item android:id="@+id/nav_activities"
+        android:icon="@drawable/activities"
+        android:title="Activities" />
+    <item android:id="@+id/nav_stayhome"
+        android:icon="@drawable/ic_stayhome"
+        android:title="Counter 15 days"
+        />
+    <item android:id="@+id/nav_stat"
+        android:icon="@drawable/ic_stat"
+        android:title="Latest Statistics" />
+
+</menu>

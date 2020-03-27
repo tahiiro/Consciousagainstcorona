@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="4dp"
+                app:title="Prevention"
+                app:titleMarginStart="10dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="400dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="150dp"
+                                android:text="Basic protective measures against the new coronavirus"
+                                android:textColor="#fff"
+                                android:textSize="40dp"
+                                android:gravity="center"
+                                android:background="@drawable/shadow2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Wash your hands frequently"
+                                android:textColor="#fff"
+                                android:textSize="30dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Maintain social distancing"
+                                android:textColor="#fff"
+                                android:textSize="30dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Avoid touching eyes, nose and mouth"
+                                android:textColor="#fff"
+                                android:textSize="30dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Practice respiratory hygiene"
+                                android:textColor="#fff"
+                                android:textSize="30dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19."
+                                android:textSize="20dp"
+                                android:padding="15dp"
+                                android:background="#E6E2E2"
+                                android:textColor="#000"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </FrameLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        android:background="@drawable/back"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffff"
+        app:itemIconTint="#ce4552"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

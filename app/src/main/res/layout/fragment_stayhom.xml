@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ffff"
+                android:elevation="4dp"
+                app:title="Stay at home"
+
+                app:titleMarginStart="10dp"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/colorPrimaryDark"/>
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="283dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/shadow" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/backcount"/>
+                            <TextView
+                                android:id="@+id/txtview"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:text="15/15"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="35sp" />
+                            <TextView
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:text="Days"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:paddingTop="60dp"
+                                android:textColor="#b5344d"
+                                android:textSize="30sp" />
+
+                        </FrameLayout>
+
+
+
+
+                    </FrameLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/bstart"
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="440dp"
+                        android:text="start"
+                        android:textColor="#ffff"
+                        android:background="@drawable/shadow2"
+                        />
+
+                    <Button
+                        android:id="@+id/brestart"
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="500dp"
+                        android:text="Stop"
+                        android:background="@drawable/shadow1"
+                        android:textColor="#ffff"/>
+                </FrameLayout>
+        </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        android:background="@drawable/back"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:itemTextColor="#ffff"
+        app:itemIconTint="#ce4552"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
