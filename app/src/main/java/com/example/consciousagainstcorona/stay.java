@@ -168,7 +168,7 @@ public class stay extends AppCompatActivity  implements NavigationView.OnNavigat
             Date date2 = format1.parse(day2);
 
             long dif=date2.getTime()-date1.getTime();
-
+            dif=Math.abs(dif);
 
             tstview.setText(""+(TimeUnit.DAYS.convert(dif,TimeUnit.MILLISECONDS)+1)+"/15");
             } catch (ParseException e) {
